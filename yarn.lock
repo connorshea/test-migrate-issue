@@ -124,22 +124,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mastodon/mastodon@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@mastodon/mastodon@workspace:."
-  dependencies:
-    "@types/react": "npm:^18.2.7"
-    "@types/react-dom": "npm:^18.2.4"
-    eslint: "npm:^9.23.0"
-    eslint-plugin-react: "npm:^7.37.4"
-    oxlint: "npm:^1.28.0"
-    react: "npm:^18.2.0"
-    react-dom: "npm:^18.2.0"
-    typescript: "npm:~5.9.0"
-    typescript-eslint: "npm:^8.46.4"
-  languageName: unknown
-  linkType: soft
-
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -2096,6 +2080,22 @@ __metadata:
   checksum: 10c0/83b88e6115b4af1c537f8dabf5c3744032cb875d63bc05c288b1b8c0ef37cbe55353f95d8ca817e8843806e3e150b118bc624e4279b24b4776b4198232735a77
   languageName: node
   linkType: hard
+
+"repo@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "repo@workspace:."
+  dependencies:
+    "@types/react": "npm:^18.2.7"
+    "@types/react-dom": "npm:^18.2.4"
+    eslint: "npm:^9.23.0"
+    eslint-plugin-react: "npm:^7.37.4"
+    oxlint: "npm:^1.28.0"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    typescript: "npm:~5.9.0"
+    typescript-eslint: "npm:^8.46.4"
+  languageName: unknown
+  linkType: soft
 
 "resolve-from@npm:^4.0.0":
   version: 4.0.0
