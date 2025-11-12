@@ -28,7 +28,7 @@
     "react/no-unknown-property": "warn"
   },
   "ignorePatterns": [
-    "node_modules/**/*",
+    "node_modules/**/*"
   ],
   "overrides": [
     {
