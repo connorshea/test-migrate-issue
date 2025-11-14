@@ -1,22 +1,8 @@
 import { globalIgnores } from 'eslint/config';
 import react from 'eslint-plugin-react';
-import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
-export const baseConfig = [
-  {
-    linterOptions: {
-      reportUnusedDisableDirectives: 'error',
-      reportUnusedInlineConfigs: 'error',
-    },
-    rules: {
-      'no-unused-vars': 'off',
-    },
-  },
-];
-
 export default tseslint.config([
-  baseConfig,
   globalIgnores([
     'node_modules/**/*',
   ]),
@@ -24,12 +10,7 @@ export default tseslint.config([
   react.configs.flat['jsx-runtime'],
   {
     languageOptions: {
-      globals: {
-        ...globals.browser,
-      },
-
       parser: tseslint.parser,
-      ecmaVersion: 2021,
       sourceType: 'module',
     },
 
@@ -40,7 +21,6 @@ export default tseslint.config([
     },
 
     rules: {
-      'no-restricted-syntax': "off",
       'react/jsx-filename-extension': "off",
     },
   },
@@ -53,7 +33,6 @@ export default tseslint.config([
     ],
 
     rules: {
-      'consistent-return': 'off',
       'react/prop-types': "off",
     },
   }

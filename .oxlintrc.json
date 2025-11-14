@@ -7,10 +7,11 @@
     "correctness": "off"
   },
   "env": {
-    "builtin": true,
-    "es2021": true,
-    "browser": true
+    "builtin": true
   },
+  "ignorePatterns": [
+    "node_modules/**/*"
+  ],
   "rules": {
     "react/jsx-key": "warn",
     "react/jsx-no-comment-textnodes": "warn",
@@ -27,9 +28,6 @@
     "react/no-unescaped-entities": "warn",
     "react/no-unknown-property": "warn"
   },
-  "ignorePatterns": [
-    "node_modules/**/*"
-  ],
   "overrides": [
     {
       "files": [
